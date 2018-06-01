@@ -1,0 +1,525 @@
+@media (max-width: 1600px) {
+    #wrap {
+        height: 100%!important;
+        padding-bottom: 200px;
+    }
+    .search_hash form .form-group i {
+        width: 2%;
+        min-width: 20px;
+    }
+    /* .block_height_info .col-sm-6{
+        min-height: 400px;
+        height: 400px
+    } */
+}
+@media (max-width: 1920px) {
+    .search_wrap{
+        height: -moz-calc(100% - 28px);
+        height: -webkit-calc(100% - 28px);
+        height: calc(100% - 28px);
+        min-height: 800px;
+
+    }
+}
+
+@media (max-width: 1366px) {
+    .table_wrap table tbody tr {
+        line-height: 35px
+    }
+    .table_wrap table td,
+    .table_wrap table th {
+        line-height: 35px;
+        height: 5px;
+        font-size: 14px
+    }
+    .table_wrap table td, .table_wrap table th{
+        line-height: 35px;
+    }
+    .table_wrap table tbody tr {
+        line-height: 35px;
+        color: #676a6c
+    }
+    .table_wrap table td, .table_wrap table th{
+        line-height: 35px;
+    }
+    .search_wrap{
+        height: -moz-calc(100% - 28px);
+        height: -webkit-calc(100% - 28px);
+        height: calc(100% - 28px);
+        min-height: 611px;
+
+    }
+    .search_info_wrap{
+        top: 14%
+    }
+    .table_wrap table tbody tr{
+        line-height: 35px;
+    }
+    .table_wrap table thead tr{
+        line-height: 35px;
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px) {
+    .block_height_info .col-sm-6 {
+        min-height: 330px;
+        height: 330px;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:991px) {
+    .block_height_info .col-sm-6 {
+        min-height: 253px;
+        height: 253px;
+    }
+    .search_info_wrap{
+        top: 10%
+    }
+}
+
+@media (max-width: 768px) {
+    .search_hash form .form-group input {
+        font-size: 16px;
+    }
+    
+
+    .table_wrap table td,
+    .table_wrap table th {
+        max-width: 40px;
+        overflow: hidden;
+        /*超出的部分隐藏起来。*/
+        white-space: nowrap;
+        /*不显示的地方用省略号...代替*/
+        text-overflow: ellipsis;
+        /* 支持 IE */
+        height: 40px;
+    }
+    .table_wrap table tbody tr td:nth-child(1) a {
+        color: #6eb0e9;
+        max-width: 40px;
+        overflow: hidden;
+        /*超出的部分隐藏起来。*/
+        white-space: nowrap;
+        /*不显示的地方用省略号...代替*/
+        text-overflow: ellipsis;
+        /* 支持 IE */
+    }
+    .logo a {
+        line-height: 35px;
+        color: #FFF;
+        font-weight: 600;
+        font-size: 15px;
+        letter-spacing: 2px;
+    }
+
+    .label_img {
+        line-height: 30px;
+        margin-right: 15px;
+        width: 25px;
+    }
+    .block_height_info .col-sm-6 {
+        height: 300px;
+        min-height: 300px;
+    }
+    .search_hash form .form-group i {
+        top: -30%;
+    }
+    .search_hash form .form-group {
+        height: 38px;
+    }
+    .balance {
+        padding-left: 0;
+    }
+    .search_hash {
+        margin-top: 17.42%;
+    }
+    .prompt {
+        margin-top: 26px;
+        font-size: 16px;
+    }
+    .block_height_info .col-sm-6 h3 {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .block_height_info {
+        padding-top: 26.17%;
+    }
+    .block_height_info .col-sm-6 .pull-left p {
+        font-size: 22px;
+    }
+    .record h3 {
+        font-size: 20px;
+    }
+    .block_height_info .col-sm-6 .pull-left span {
+        font-size: 16px;
+    }
+    #wrap {
+        height: 100%!important
+    }
+    .search_hash form .form-group i {
+        width: 3%;
+    }
+    .paging_info .pull-left {
+        width: 100%;
+        text-align: center
+    }
+    .paging_num {
+        padding-top: 0;
+        float: left;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+    .paging_info .pull-right {
+        padding: 15px 0;
+    }
+    .error_pos h2{
+        line-height: 2;
+        font-size: 18px;
+    }
+    .error_pos p{
+        line-height: 1.5;
+        font-size: 14px;
+    }
+    body,html,.search_wrap,#search{
+        height: auto;
+        min-height: 780px!important;
+    }
+    .search_info_wrap{
+        transform: none;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        position: relative;
+    }
+    .search_wrap_1 table tbody tr td:nth-child(2) div{
+            max-height: initial;
+    overflow-y: auto;
+        word-wrap: break-word;
+        word-break: break-all;
+        vertical-align: middle;
+    }
+    .search_wrap_1 a{
+            white-space: initial;
+    }
+    .search_wrap_1>div{
+        padding-bottom: 30px
+    }
+    .table_wrap table tr td:nth-child(5){
+        overflow: hidden!important;
+        text-overflow: ellipsis!important;
+        max-width: 40px;
+        white-space: nowrap!important;
+    }
+
+    .table_wrap table tr td:nth-child(2){
+        overflow: hidden!important;
+        text-overflow: ellipsis!important;
+        max-width: 40px;
+        white-space: nowrap!important;
+    }
+    .table_thead .table_row ul li{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 767px) {
+    .search_wrap {
+        min-height: 635px;
+    }
+}
+
+
+
+
+
+/* @media (max-width: 768px) {
+    .search_hash {
+        margin-top: 28.42%;
+    }
+} */
+
+@media screen and (min-width:415px) and (max-width:767px) {
+    .search_hash form .form-group i {
+        width: 2%;
+        min-width: 15px;
+    }
+    .balance {
+        padding-left: 0;
+    }
+}
+
+@media screen and (min-width:769px) and (max-width:1199px) {
+
+    .balance {
+        padding-left: 0;
+    }
+}
+
+@media (max-width: 414px) {
+    .record table thead th {
+        overflow: hidden;
+        /*超出的部分隐藏起来。*/
+        white-space: nowrap;
+        /*不显示的地方用省略号...代替*/
+        text-overflow: ellipsis;
+        /* 支持 IE */
+        max-width: 40px
+    }
+
+    .search_hash form .form-group i {
+        width: 2%;
+        min-width: 15px;
+    }
+
+    .record table tbody tr td {
+        font-size: 13px;
+        line-height: 3.5;
+        overflow: hidden;
+        /*超出的部分隐藏起来。*/
+        white-space: nowrap;
+        /*不显示的地方用省略号...代替*/
+        text-overflow: ellipsis;
+        /* 支持 IE */
+        max-width: 40px
+    }
+    .record table th {
+        font-size: 13px;
+    }
+    .paging_info .pull-right {
+        width: 100%;
+        padding: 15px 0
+    }
+    /* .paging_num{
+        padding-top: 18px;
+    } */
+    .paging_info .pull-left a {
+        font-size: 14px;
+    }
+    .paging_num span {
+        font-size: 14px;
+    }
+    .block_height_info .col-sm-6:first-child {
+        min-height: 200px;
+        height: 200px;
+    }
+    .address span {
+        font-size: 15px;
+    }
+    .address em {
+        font-size: 13px;
+    }
+    .balance {
+        padding-left: 0;
+    }
+    .balance span {
+        font-size: 13px;
+    }
+    .balance em {
+        font-size: 13px;
+    }
+    .table_wrap table th {
+        font-size: 14px;
+    }
+    .table_wrap table td {
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 375px) {
+    .search_hash form .form-group input {
+        font-size: 14px;
+    }
+    .search_hash {
+        margin-top: 18.42%;
+    }
+    .prompt {
+        font-size: 12px;
+    }
+    .block_height_info .col-sm-6 h3 {
+        font-size: 16px;
+    }
+    .block_height_info .col-sm-6 .pull-left p {
+        font-size: 18px;
+        margin-bottom: 13px;
+    }
+    .block_height_info .col-sm-6 .pull-left span {
+        font-size: 12px;
+    }
+    .record h3 {
+        font-size: 16px;
+    }
+    .paging_info .pull-left a {
+        font-size: 12px;
+    }
+    .paging_num span {
+        font-size: 12px;
+        padding: 0 3px
+    }
+    .paging_num input {
+        width: 26px;
+        height: 23px;
+        line-height: 23px;
+    }
+    .paging_num button {
+        height: 23px;
+        line-height: 23px;
+    }
+    footer p {
+        font-size: 14px;
+    }
+    .block_height_info .col-sm-6:first-child {
+        min-height: 200px;
+        height: 200px;
+    }
+    .address span {
+        font-size: 15px;
+    }
+    .address em {
+        font-size: 13px;
+    }
+    .balance {
+        padding-left: 0;
+    }
+    .balance span {
+        font-size: 13px;
+    }
+    .balance em {
+        font-size: 13px;
+    }
+    .table_wrap table th {
+        font-size: 14px;
+    }
+    .table_wrap table td {
+        font-size: 13px;
+    }
+}
+
+@media screen and (min-width:321px) and (max-width:374px) {
+    .block_height_info .col-sm-6:first-child {
+        min-height: 200px;
+        height: 200px;
+    }
+}
+
+@media (max-width: 320px) {
+    .search_hash form .form-group input {
+        font-size: 14px;
+    }
+    .search_hash {
+        margin-top: 32.42%;
+    }
+    .prompt {
+        font-size: 12px;
+    }
+    .block_height_info .col-sm-6 h3 {
+        font-size: 16px;
+    }
+    .block_height_info .col-sm-6 .pull-left p {
+        font-size: 18px;
+        margin-bottom: 13px;
+    }
+    .block_height_info .col-sm-6 .pull-left span {
+        font-size: 12px;
+    }
+    .record h3 {
+        font-size: 16px;
+    }
+    .paging_info .pull-left a {
+        font-size: 12px;
+    }
+    .paging_num span {
+        font-size: 12px;
+        padding: 0 3px
+    }
+    .paging_num input {
+        width: 26px;
+        height: 23px;
+        line-height: 23px;
+    }
+    .paging_num button {
+        height: 23px;
+        line-height: 23px;
+    }
+    footer p {
+        font-size: 14px;
+    }
+    .block_height_info .col-sm-6:first-child {
+        min-height: 200px;
+        height: 200px;
+    }
+    .address span {
+        font-size: 15px;
+    }
+    .address em {
+        font-size: 13px;
+    }
+    .balance {
+        padding-left: 0;
+    }
+    .balance span {
+        font-size: 13px;
+    }
+    .balance em {
+        font-size: 13px;
+    }
+    .table_wrap table th {
+        font-size: 14px;
+    }
+    .table_wrap table td {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 768px) {
+.table_tbody .table_row ul li:nth-child(1){
+    max-width: 5%;
+    min-width: 30px;
+}
+.table_tbody .table_row ul li:nth-child(2){
+    max-width: 45%;
+    min-width: 45%;
+}
+.table_tbody .table_row ul li:nth-child(3){
+    max-width: 15%;
+    min-width: 30px;
+}
+.table_tbody .table_row ul li:nth-child(4){
+    max-width: 5%;
+    min-width: 30px;
+}
+.table_tbody .table_row ul li:nth-child(5){
+    max-width: 15%;
+    min-width: 30px;
+}
+.table_tbody .table_row ul li:nth-child(6){
+    max-width: 15%;
+    min-width: 30px;
+}
+
+.table_thead .table_row ul li:nth-child(1){
+    max-width: 5%;
+    min-width: 30px;
+}
+.table_thead .table_row ul li:nth-child(2){
+    max-width: 45%;
+    min-width: 45%
+}
+.table_thead .table_row ul li:nth-child(3){
+    max-width: 15%;
+    min-width: 30px;
+}
+.table_thead .table_row ul li:nth-child(4){
+    max-width: 5%
+}
+.table_thead .table_row ul li:nth-child(5){
+    max-width: 15%;
+    min-width: 30px;
+}
+.table_thead .table_row ul li:nth-child(6){
+    max-width: 15%;
+    min-width: 30px;
+}
+}
+

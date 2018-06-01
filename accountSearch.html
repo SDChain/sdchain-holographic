@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" id="search">
+
+<head>
+<meta id="i18n_pagename" content="index-common">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta name="description" content="">
+<title class="i18n" name="logoTitle">六域息影</title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/media.css">
+<style type="text/css">
+table tbody {
+    /*display: block;
+    height: 195px;
+    overflow-y: scroll;*/
+}
+
+table thead, tbody tr {
+    display: table;
+    width: 100%;
+    table-layout: fixed;
+}
+</style>
+<!--<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900,100' rel='stylesheet' type='text/css'>--->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <div class="search_wrap">
+        <header class="header-normal">
+            <div class="sticky">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html">
+                            <label class="label_img"><img class="" src="images/logo.png" alt=""></label>
+                            <span class="i18n" name="logoTitle">六域息影</span>
+                        </a>
+                        <div class="img-responsive pull-right">
+                            <img src="images/cn.png" alt="" name="selectImg" target_val="zh-CN">
+                            <img src="images/en.png" alt="" name="selectImg" style="display: none" target_val="en">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="search_info_wrap">
+            <div class="container clearfix">
+                <div class="row">
+                    <div class="col-sm-9 clearfix">
+                        <div class="pull-left address">
+                            <span class="i18n" name="address"> 账户地址： </span>
+                            <em></em>
+                        </div>
+                        <div class="pull-left balance">
+                            <span class="i18n" name="balances">余额：</span>
+                            <em></em>
+                        </div>
+                    </div>
+                    <div class="col-sm-3">
+                        <!-- <div class="search_input_wrap">
+                            <input type="text">
+                            <i><img src="images/search_img.png" alt=""></i>
+                        </div> -->
+                        <form name="searchForm" action="#" class="form-group" onkeydown="if(event.keyCode==13) return false;">
+                            <div class="form-group search_input_wrap">
+                                <input id="searchText" type="text" class="form-control" placeholder="交易哈希/账号地址" maxlength="64">
+                                <input type="hidden" name="txHashOrAddress" class="i18n">
+                                <i class="search_img">
+                                    <img src="images/search_img.png" alt="">
+                                </i>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="col-sm-12 table_wrap">
+                        <table>
+                            <thead border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <th class="i18n" name="txHash">交易哈希</th>
+                                    <th class="i18n" name="ledger">区块高度</th>
+                                    <th class="i18n" name="currency">通证</th>
+                                    <th class="i18n" name="txType">交易类型</th> 
+                                    <th class="i18n" name="value">数量</th>
+                                    <th class="i18n" name="time">交易时间</th>
+                                </tr>
+                            </thead>
+                            <tbody class="table_tb" style="display: block;">
+
+                                <tr>
+                                    <td colspan="5" style="text-align: center;"  class="i18n" name="loading">加载中...</td>
+                                </tr>
+
+
+                            </tbody>
+                        </table>
+                        <!-- <div class="paging">
+                            <div class="clearfix paging_info">
+                                <div class="pull-left">
+                                    <a class="active" href="javascript:;">最新</a> |
+                                    <a href="javascript:;">更多</a>
+                                </div>
+                                <div class="pull-right">
+                                    <div class="paging_num" style="opacity: 1;">
+                                        <span>上一页  </span>
+                                        <span>第 10/100 页</span>
+                                        <span>  下一页</span>
+                                        <span>跳转到</span>
+                                        <input type="text">
+                                        <span>页</span>
+                                        <button>GO</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    </div>
+                </div>
+
+                <!-- <a href="javascript:;" class="loadMore">加载更多</a> -->
+        </section>
+    </div>
+    <footer>
+       <p class="i18n" name="copyRight">CopyRight 2018六域链基金会(加拿大) 版权所有</p>
+    </footer>
+</body>
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/date-format.js"></script>
+<script src="js/jquery.i18n.properties.js"></script>
+<script src="js/constant.js?ver=1.0.0"></script>
+<script src="js/language.js?ver=1.0.0"></script>
+<script src="js/accountSearch.js?ver=1.0.0"></script>
+<script type="text/javascript">
+    var win_h, search_h,table_tb;
+    table_tb = $(".table_tb tr").height();
+    $(window).resize(function() {
+        win_h = $(window).height();
+        table_tb = $(".table_tb tr").height();
+        $(".table_tb").css("height",table_tb*10);
+        $(".loadMore").on('click', function(event) {
+        $(".search_info_wrap").addClass("active");
+        $(".search_wrap").css("min-height", (win_h - 28))
+        var bodu_h = $("body").height();
+        if (bodu_h < $(window).height()) {
+            $("body").css("height", "auto");
+        } else {
+            $("body").css("height", "auto");
+        }
+    });
+    });
+    win_h = $(window).height();
+    
+    
+    $(".table_tb").css("height",table_tb*10)
+    $(".loadMore").on('click', function(event) {
+        $(".search_info_wrap").addClass("active");
+        $(".search_wrap").css("min-height", (win_h - 28))
+        var bodu_h = $("body").height();
+        if (bodu_h < $(window).height()) {
+            $("body").css("height", "auto");
+        } else {
+            $("body").css("height", "auto");
+        }
+    });
+    $(document).ready(function() {
+        TsManager.init();
+    });
+</script>
+
+</html>

@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta id="i18n_pagename" content="index-common">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+<meta name="description" content="">
+<title class="i18n" name="logoTitle">六域息影</title>
+<link rel="shortcut icon" href="images/favicon.ico" />
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/reset.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/main.css">
+<link rel="stylesheet" href="css/media.css">
+<!--<link href='https://fonts.googleapis.com/css?family=Lato:400,300,700,900,100' rel='stylesheet' type='text/css'>--->
+<!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body>
+    <img id="img" src="images/banner.png" alt="">
+    <div id="wrap">
+        <header class="header-normal">
+            <div class="sticky">
+                <div class="container">
+                    <div class="logo">
+                        <a href="index.html">
+                            <label class="label_img"><img class="" src="images/logo.png" alt=""></label>
+                            <span class="i18n" name="logoTitle">六域息影</span>
+                        </a>
+                        <div class="img-responsive pull-right">
+                            <img src="images/cn.png" alt="" name="selectImg" target_val="zh-CN">
+                            <img src="images/en.png" alt="" name="selectImg" style="display: none" target_val="en">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <section class="search_hash">
+            <div class="row_w">
+                <div class="container">
+                    <div class="col-sm-12">
+                        <div class="col-sm-12">
+                            <form class="form-inline" name="searchForm" action="#" onkeydown="if(event.keyCode==13) return false;">
+                                <div class="form-group">
+                                    <input id="searchText" type="text" class="form-control" placeholder="交易哈希/账户地址" maxlength="64">
+                                    <input type="hidden" name="txHashOrAddress" class="i18n">
+                                    <i class="search_img">
+                                        <img src="images/search_img.png" alt="">
+                                    </i>
+                                </div>
+                                <p class="prompt i18n" name="textBottom">您可以输入交易哈希、账户地址搜索查看对应信息</p>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="block_height">
+            <div class="row_w">
+                <div class="container block_height_info">
+                    <div class="col-sm-6">
+                        <h3 class="i18n" name="ledger">区块高度</h3>
+                        <div class="clearfix">
+                            <div class="pull-left">
+                                <p id="currentLedger"></p>
+                                <span class="i18n" name="NowLedger"> 最新区块高度 </span>
+                            </div>
+                            <!-- <div class="pull-left">
+                                <p>
+                                    ￥3.45
+                                </p>
+                                <span>
+                                    市场价值
+                                </span>
+                            </div> -->
+                        </div>
+                    </div>
+                    <div class="col-sm-6 clearfix ">
+                        <div id="main" class="chart" style="width: 100%; height: 100%"></div>
+                        <div class="data_info" style="width: 55%;margin-top:2%">
+                            <span class="i18n" name="last7">最近7天交易历史</span>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 record">
+                        <h3 class="i18n" name="transactions">交易记录</h3>
+                        <!-- <table class="row_w" id="scrooleTable">
+                            <thead>
+                                <tr>
+                                    <th>状态</th>
+                                    <th>交易hash</th>
+                                    <th>区块高度</th>
+                                    <th>通证</th>
+                                    <th>数量</th>
+                                    <th>时间</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
+                        </table> -->
+
+                        <div class="table">
+                            <div class="table_thead">
+                                <div class="table_row">
+                                    <ul class="clearfix">
+                                        <li class="i18n" name="state">状态</li>
+                                        <li class="i18n" name="txHash">交易hash</li>
+                                        <li class="i18n" name="ledger">区块高度</li>
+                                        <li class="i18n" name="currency">通证</li>
+                                        <li class="i18n" name="value">数量</li>
+                                        <li class="i18n" name="time">时间</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="scrooleTable">
+                                <div class="table_tbody">
+                                    <div class="table_row"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="paging">
+                            <div class="clearfix paging_info">
+                                <div class="pull-left">
+                                    <a class="active" href="javascript:;">最新</a> |
+                                    <a href="javascript:;">更多</a>
+                                </div>
+                                <div class="pull-right">
+                                    <div class="paging_num">
+                                        <span>上一页  </span>
+                                        <span>第 10/100 页</span>
+                                        <span>  下一页</span>
+                                        <span>跳转到</span>
+                                        <input type="text">
+                                        <span>页</span>
+                                        <button>GO</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p class="i18n" name="copyRight">CopyRight 2018六域链基金会(加拿大) 版权所有</p>
+    </footer>
+</body>
+<script src="js/jquery-2.2.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/echarts.min.js"></script>
+<script src="js/date-format.js"></script>
+<script src="js/jquery.i18n.properties.js"></script>
+<script src="js/constant.js?ver=1.0.0"></script>
+<script src="js/language.js?ver=1.0.0"></script>
+<script src="js/main.js?ver=1.0.1"></script>
+<script src="js/index.js?ver=1.0.2"></script>
+<script type="text/javascript">
+    jQuery(document).ready(function() {
+        IndexManager.init();
+        // setInterval(function() {
+        //     IndexManager.searchTxs();
+        // }, 3000);
+
+    });
+</script>
+</html>
